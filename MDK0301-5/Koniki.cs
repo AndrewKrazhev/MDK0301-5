@@ -21,5 +21,12 @@ namespace MDK0301_5
              */
             if (login == "" && password == "") { return true; } else { return false; }
         }
+
+        public static string connectionString()
+        {
+            return "some connection string";
+        }
+
+
     }
 }

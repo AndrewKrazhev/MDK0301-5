@@ -86,7 +86,7 @@
             this.MinimizeBox = false;
             this.Name = "SettingsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SettingsForm";
+            this.Text = "Настройки";
             this.Load += new System.EventHandler(this.SettingsForm_Load);
             this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.SettingsForm_HelpRequested);
             this.ResumeLayout(false);
