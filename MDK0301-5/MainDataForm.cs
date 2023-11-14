@@ -12,6 +12,7 @@ namespace MDK0301_5
 {
     public partial class MainDataForm : Form
     {
+        private const string helpfile = "help.chm";
         public MainDataForm()
         {
             InitializeComponent();
@@ -21,6 +22,31 @@ namespace MDK0301_5
         {
             PasswordForm passwordForm = new PasswordForm();
             passwordForm.ShowDialog();
+
+            this.Text = Properties.Settings.Default.MainFormName;
+
+        }
+
+        private void закрытьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void SettingsMenuItem_Click(object sender, EventArgs e)
+        {
+            SettingsForm settingsForm = new SettingsForm();
+            settingsForm.ShowDialog();
+        }
+
+        private void MainDataForm_Activated(object sender, EventArgs e)
+        {
+            this.Text = Properties.Settings.Default.MainFormName;
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HelpNavigator navigator = HelpNavigator.TableOfContents;
+            Help.ShowHelp(this, helpfile, navigator);
         }
     }
 }

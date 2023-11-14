@@ -47,7 +47,7 @@
             // 
             this.passwordBox.Location = new System.Drawing.Point(94, 74);
             this.passwordBox.Name = "passwordBox";
-            this.passwordBox.PasswordChar = '¿';
+            this.passwordBox.PasswordChar = 'Ø';
             this.passwordBox.Size = new System.Drawing.Size(142, 20);
             this.passwordBox.TabIndex = 1;
             // 

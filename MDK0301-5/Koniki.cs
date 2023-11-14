@@ -16,6 +16,9 @@ namespace MDK0301_5
         /// <returns>Возвращает значение типа bool</returns>
         public static bool checkPassword(string login, string password)
         {
+            /*
+             Здесь может и должна быть проверка запросом к базе данных
+             */
             if (login == "" && password == "") { return true; } else { return false; }
         }
     }
