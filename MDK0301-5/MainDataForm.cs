@@ -48,5 +48,11 @@ namespace MDK0301_5
             HelpNavigator navigator = HelpNavigator.TableOfContents;
             Help.ShowHelp(this, helpfile, navigator);
         }
+
+        private void aboutMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutForm aboutForm = new AboutForm();
+            aboutForm.ShowDialog();
+        }
     }
 }
