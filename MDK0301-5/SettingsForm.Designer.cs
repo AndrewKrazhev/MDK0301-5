@@ -52,22 +52,24 @@
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(476, 353);
+            this.buttonSave.Location = new System.Drawing.Point(487, 353);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 2;
             this.buttonSave.Text = "Сохранить";
             this.buttonSave.UseVisualStyleBackColor = true;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+            this.buttonSave.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.buttonSave_HelpRequested);
             // 
             // buttonAbort
             // 
-            this.buttonAbort.Location = new System.Drawing.Point(557, 353);
+            this.buttonAbort.Location = new System.Drawing.Point(568, 353);
             this.buttonAbort.Name = "buttonAbort";
             this.buttonAbort.Size = new System.Drawing.Size(75, 23);
             this.buttonAbort.TabIndex = 3;
             this.buttonAbort.Text = "Отмена";
             this.buttonAbort.UseVisualStyleBackColor = true;
+            this.buttonAbort.Click += new System.EventHandler(this.buttonAbort_Click);
             // 
             // SettingsForm
             // 
@@ -78,10 +80,15 @@
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.labelFormName);
             this.Controls.Add(this.FormNameBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.HelpButton = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "SettingsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SettingsForm";
             this.Load += new System.EventHandler(this.SettingsForm_Load);
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.SettingsForm_HelpRequested);
             this.ResumeLayout(false);
             this.PerformLayout();
 
