@@ -19,7 +19,8 @@ namespace MDK0301_5
             /*
              Здесь может и должна быть проверка запросом к базе данных.
              */
-            if (login == "" && password == "") { return true; } else { return false; }
+            if (login == "" && password == "") { return true; }
+            else { return false; }
         }
 
         /// <summary>

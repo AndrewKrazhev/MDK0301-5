@@ -31,14 +31,16 @@ namespace MDK0301_5
         {
             if (e.CloseReason == CloseReason.UserClosing)
             {
-                if (!Koniki.checkPassword(loginBox.Text, passwordBox.Text)) { Application.Exit(); }                            
+                if (!Koniki.checkPassword(loginBox.Text, passwordBox.Text)) 
+                { Application.Exit(); }                            
             }
         }
 
         private void OKbutton_Click(object sender, EventArgs e)
         {
-            if (Koniki.checkPassword(loginBox.Text, passwordBox.Text)) { this.Close(); } 
-                else { MessageBox.Show("Неверный логин или пароль. Обратитесь к системному адмнистратору");}
+            if (Koniki.checkPassword(loginBox.Text, passwordBox.Text)) 
+            { this.Close(); } 
+            else { MessageBox.Show("Неверный логин или пароль. Обратитесь к системному адмнистратору");}
         }
     }
 }
